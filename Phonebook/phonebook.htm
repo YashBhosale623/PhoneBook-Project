@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PhoneBook</title>
+	<link rel="stylesheet" href="styles/phonebook.css">
+	<script src="scripts/phonebook.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>PHONE DIRECTORY</h1>
+		</div>
+		<div class="quickadd"><button id="QuickAdd">ADD</button></div>
+		<div class="quickaddForm">
+			<button id="Cancel">Cancel</button><br>
+			
+			<label for="fullname">Name</label><br><input type="text" id="fullname" class="formFields" onkeyup="document.getElementById('printname').innerHTML = this.value"><p></p>
+			<label for="phone">Phone</label><br><input type="number" id="phone" class="formFields" onkeyup="document.getElementById('printphone').innerHTML = this.value">
+			<p>The Subscriber To Be Added Is:</p>
+			<label for="name">Name</label><br><p class = 'printname'id='printname'></p>
+			<label for="Phone">Phone</label><br><p class = 'printphone' id = 'printphone'></p>
+			<br><br>
+			<button id="Add">Add Now</button>
+
+		</div>
+		<div class="addbook">
+			</div>
+	</div>
+</body>
+</html>
